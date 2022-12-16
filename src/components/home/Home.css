@@ -1,0 +1,33 @@
+.homeFather {
+    height: 100vh;
+    width: 100vw;
+    background-color: #b6baba;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerFather {
+    max-width: 1062px;
+    display: flex;
+}
+
+.containerFather div {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    justify-content: center;
+}
+
+.containerFather img {
+    border-radius: 800px;
+    width: 300px;
+}
+
+.containerFather div h2 {
+    margin-bottom: 20px;
+}
+
+.containerFather div p {
+    font-size: 20px;
+}
