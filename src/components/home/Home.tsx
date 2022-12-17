@@ -1,7 +1,7 @@
 import './Home.css';
 import lucasImg from '../../assets/img/lucas.jpeg';
 
-function Home() {
+function HomeComponent() {
   return (
     <section id="home" className="homeFather">
       <div>
@@ -25,4 +25,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default HomeComponent;

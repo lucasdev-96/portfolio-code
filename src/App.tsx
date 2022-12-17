@@ -1,13 +1,15 @@
-import './App.css';
+// import './App.css';
 import NavBarComponent from './components/NavBar/NavBar';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Home from './components/home/Home';
+import HomeComponent from './components/home/Home';
+import CarrouselComponent from './components/carrousel/Carrousel';
 
 function App() {
   return (
     <>
       <NavBarComponent></NavBarComponent>
-      <Home></Home>
+      <HomeComponent></HomeComponent>
+      <CarrouselComponent></CarrouselComponent>
     </>
   );
 }

@@ -20,10 +20,14 @@ function NavBarComponent() {
             <Nav.Link href="#home">PÁGINA INICIAL</Nav.Link>
             <Nav.Link href="#link">CURRÍCULO</Nav.Link>
             <NavDropdown title="CURSOS" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#cursos/3.1">PROJETOS</NavDropdown.Item>
-              <NavDropdown.Item href="#cursos/3.2">CERTIFICADOS</NavDropdown.Item>
+              <NavDropdown.Item href="#cursos/1.1">PROJETOS</NavDropdown.Item>
+              <NavDropdown.Item href="#cursos/1.2">CERTIFICADOS</NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="#skills">HABILIDADES</Nav.Link>
+            <NavDropdown title="HABILIDADES" id="basic-nav-dropdown">
+              <NavDropdown.Item href="#habilidades/1.1">Habilidades Técnicas</NavDropdown.Item>
+              <NavDropdown.Item href="#habilidades/1.2">Habilidades Pessoais</NavDropdown.Item>
+            </NavDropdown>
+
             <Nav.Link href="#Contact">CONTATO</Nav.Link>
           </Nav>
         </Navbar.Collapse>
