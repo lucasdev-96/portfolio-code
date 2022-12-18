@@ -8,7 +8,7 @@ const CarouselComponent = () => {
   const images = getAllTecnicSkills();
   return (
     <section id="habilidades/1.1" className="fatherTechniqueSkills">
-      <h4>Habilidades Técnicas</h4>
+      <div className="textSkill">Habilidades Técnicas</div>
       <div className="containerImgs">
         {images.map((img) => (
           <CardComponent key={img.name} {...img} />
