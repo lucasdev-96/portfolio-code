@@ -1,17 +1,8 @@
 .fatherTechniqueSkills {
     display: flex;
-    margin-top: 30px;
     flex-direction: column;
     align-items: center;
-}
-
-.fatherTechniqueSkills .containerImgs {
-    display: flex;
-    overflow-x: scroll;
-    align-items: center;
-    width: 80%;
-    margin-top: 30px;
-    padding: 10px;
+    width: 100%;
 }
 
 .textSkill {
@@ -20,4 +11,5 @@
     background-color: black;
     color: white;
     font-size: 26px;
+    margin-bottom: 50px;
 }

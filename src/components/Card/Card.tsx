@@ -15,7 +15,7 @@ const CardComponent: React.FC<Card> = ({ name, src, skill, id }) => {
   const starQuantityResult = starQuantity.fill('value').map((x, index) => index);
   return (
     <div className="CardFather">
-      <div style={{ width: '400px', textAlign: 'center' }}>
+      <div>
         <img className="imgs" src={src} alt={name} />
       </div>
       <p>{name}</p>
