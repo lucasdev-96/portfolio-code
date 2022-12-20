@@ -3,6 +3,7 @@ import NavBarComponent from './components/NavBar/NavBar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import HomeComponent from './components/home/Home';
 import CarrouselComponent from './components/carrousel/Carrousel';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <NavBarComponent></NavBarComponent>
       <HomeComponent></HomeComponent>
       <CarrouselComponent></CarrouselComponent>
+      <Footer></Footer>
     </>
   );
 }

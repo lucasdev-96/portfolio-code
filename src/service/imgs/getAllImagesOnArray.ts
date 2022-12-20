@@ -32,6 +32,7 @@ import noSql from '../../assets/img/skills/nosql.png';
 import eslLint from '../../assets/img/skills/eslint.png';
 import html from '../../assets/img/skills/html5.png';
 import css from '../../assets/img/skills/css3.png';
+import boostrap from '../../assets/img/skills/boostrap.png';
 
 type data = {
   id: number;
@@ -140,7 +141,7 @@ function transformImgsToArray(): Array<data> {
     },
     {
       id: 17,
-      name: 'express',
+      name: 'ExpressJS',
       src: express,
       skill: 4
     },
@@ -244,6 +245,12 @@ function transformImgsToArray(): Array<data> {
       id: 34,
       name: 'EslLint',
       src: eslLint,
+      skill: 5
+    },
+    {
+      id: 35,
+      name: 'Bootstrap',
+      src: boostrap,
       skill: 5
     }
   ];

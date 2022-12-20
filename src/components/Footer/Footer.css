@@ -1,0 +1,14 @@
+.linkFooter {
+    display: flex;
+    align-items: center;
+}
+
+.linkFooter div {
+    margin-left: 10px;
+}
+
+.whatssap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

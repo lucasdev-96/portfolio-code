@@ -29,3 +29,26 @@
 .containerFather div p {
     font-size: 20px;
 }
+
+#text{
+    overflow: hidden;
+    display: inline-block;
+    font-weight: normal;
+}
+
+#text:after{
+    content: '';
+     display: inline-block;
+     background-color: #72A380;
+     margin-left: 2px;
+     height: 25px;
+     width: 4px;
+     animation: cursor 0.4s infinite;
+}
+
+@keyframes cursor {
+    0% { opacity: 1; }
+      49% { opacity: 1; }
+      50% { opacity: 0; }
+      100% { opacity: 0; }
+}

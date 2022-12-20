@@ -7,11 +7,11 @@ import './NavBar.css';
 
 function NavBarComponent() {
   return (
-    <Navbar sticky="top" bg="dark" expand="lg" variant="dark">
+    <Navbar sticky="top" className="navColor" expand="lg" variant="light">
       <Container>
         <div className="fatherNames">
           <h3 className="namesNav">Lucas Mazuca Godoi</h3>
-          <h5 className="namesNav">Desenvolvedor Full Stack Web</h5>
+          <p className="namesNav">Desenvolvedor Full Stack Web</p>
         </div>
 
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -27,8 +27,6 @@ function NavBarComponent() {
               <NavDropdown.Item href="#habilidades/1.1">Habilidades Técnicas</NavDropdown.Item>
               <NavDropdown.Item href="#habilidades/1.2">Habilidades Pessoais</NavDropdown.Item>
             </NavDropdown>
-
-            <Nav.Link href="#Contact">CONTATO</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
