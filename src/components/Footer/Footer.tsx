@@ -4,24 +4,26 @@ import { GrLinkedin } from 'react-icons/gr';
 import whatssap from '../../assets/img/skills/frame.png';
 import { Box, Container, Row, Column, FooterLink, Heading } from './FooterStyle';
 import './Footer.css';
+import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
+  const { t } = useTranslation();
   return (
     <Box>
       <Container>
         <Row>
           <Column>
-            <Heading>Currículo</Heading>
+            <Heading>{t('footer.curriculum')}</Heading>
             <FooterLink href="#">Aim</FooterLink>
             <FooterLink href="#">Vision</FooterLink>
             <FooterLink href="#">Testimonials</FooterLink>
           </Column>
           <Column>
-            <Heading>Contate-me</Heading>
+            <Heading>{t('footer.contact')}</Heading>
             <img style={{ width: '150px' }} src={whatssap} alt="whatssap" />
           </Column>
           <Column>
-            <Heading>Rede Sociais</Heading>
+            <Heading>{t('footer.socialMedia')}</Heading>
             <FooterLink href="https://www.instagram.com/lucazgodoy/" target="_blank">
               <div className="linkFooter">
                 <BsInstagram />

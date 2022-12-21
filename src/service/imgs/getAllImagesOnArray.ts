@@ -57,7 +57,7 @@ function transformImgsToArray(): Array<data> {
     },
     {
       id: 3,
-      name: 'Banco de dados',
+      name: 'Database',
       src: dataBase,
       skill: 5
     },
@@ -201,7 +201,7 @@ function transformImgsToArray(): Array<data> {
     },
     {
       id: 27,
-      name: 'Arquitetura de Software (MVC, MSC)',
+      name: 'Software Architecture (MVC, MSC)',
       src: diagramaMVC,
       skill: 5
     },

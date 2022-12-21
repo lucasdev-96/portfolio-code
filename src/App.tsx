@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import HomeComponent from './components/home/Home';
 import CarrouselComponent from './components/carrousel/Carrousel';
 import Footer from './components/Footer/Footer';
+import './service/translate/i18next';
 
 function App() {
   return (

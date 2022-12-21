@@ -1,23 +1,19 @@
 import './Home.css';
 import lucasImg from '../../assets/img/lucas.jpeg';
+import { useTranslation } from 'react-i18next';
 
 function HomeComponent() {
+  const { t } = useTranslation();
   return (
     <section id="home" className="homeFather">
       <div>
         <div className="containerFather">
           <img src={lucasImg} alt="lucas" />
           <div>
-            <h2>Olá, seja bem vindo!</h2>
-            <p>Sou um desenvolvedor de software web full stack</p>
-            <p>
-              Sempre gostei muito de Tecnologia e a ideia de um dia conseguir criar algo que eu
-              mesmo tenha feito ou em conjunto com um determinado grupo de pessoas, me fornece uma
-              incrível sensação de felicidade. Tenho facilidade e gosto de aprender coisas novas.
-            </p>
-            <p style={{ fontSize: '15px' }}>
-              Aqui você encontrará meus projetos, certificados, habilidades e mais sobre mim.
-            </p>
+            <h2>{t('home.greeting')}</h2>
+            <p>{t('home.amI')}</p>
+            <p>{t('home.about')}</p>
+            <p style={{ fontSize: '15px' }}>{t('home.info')}</p>
           </div>
         </div>
       </div>

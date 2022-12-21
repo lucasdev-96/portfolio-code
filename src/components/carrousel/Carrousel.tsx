@@ -6,6 +6,7 @@ import './Carrousel.css';
 
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import { useTranslation } from 'react-i18next';
 
 const CarouselComponent = () => {
   const responsive = {
@@ -26,11 +27,14 @@ const CarouselComponent = () => {
     }
   };
   const images = getAllTecnicSkills();
+  const { t } = useTranslation();
   return (
     <>
       <div className="carrouselColor">
-        <div className="textSkill navColor">Habilidades Técnicas</div>
-        <section id="habilidades/1.1">
+        <div id="habilidades/1.1" className="textSkill navColor">
+          {t('carrousel.name')}
+        </div>
+        <section>
           <Carousel
             swipeable={true}
             draggable={false}
