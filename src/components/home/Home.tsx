@@ -9,7 +9,7 @@ function HomeComponent() {
       <div>
         <div className="containerFather">
           <img src={lucasImg} alt="lucas" />
-          <div>
+          <div className="infosAboutMe">
             <h2>{t('home.greeting')}</h2>
             <p>{t('home.amI')}</p>
             <p>{t('home.about')}</p>

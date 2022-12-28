@@ -7,12 +7,17 @@ import './Carrousel.css';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import { useTranslation } from 'react-i18next';
+import transformCertificatesToArray from '../../service/certificates/getAllCertifatesOnArray';
 
-const CarouselComponent = () => {
+type CarouselFC = {
+  value: boolean;
+};
+
+const CarouselComponent: React.FC<CarouselFC> = ({ value }) => {
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 4,
+      items: value ? 5 : 4,
       slidesToSlide: 4
     },
     tablet: {
@@ -26,13 +31,13 @@ const CarouselComponent = () => {
       slidesToSlide: 1
     }
   };
-  const images = getAllTecnicSkills();
+  const getValue = value ? transformCertificatesToArray() : getAllTecnicSkills();
   const { t } = useTranslation();
   return (
     <>
       <div className="carrouselColor">
-        <div id="habilidades/1.1" className="textSkill navColor">
-          {t('carrousel.name')}
+        <div id={value ? 'cursos/1.2' : 'habilidades/1.1'} className="textSkill navColor">
+          {!value ? t('carrousel.name') : t('carrousel.name.certificates')}
         </div>
         <section>
           <Carousel
@@ -49,13 +54,12 @@ const CarouselComponent = () => {
             dotListClass="custom-dot-list-style"
             focusOnSelect={false}
             itemClass="carousel-item-padding-40-px">
-            {images.map((img, index) => (
-              <CardComponent {...img} key={index} />
+            {getValue.map((img, index) => (
+              <CardComponent {...img} value={value} index={index} key={index} />
             ))}
           </Carousel>
         </section>
       </div>
-      ;
     </>
   );
 };

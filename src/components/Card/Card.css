@@ -20,3 +20,11 @@
     width: 200px;
     height: 200px;
 }
+
+/* .linkDownload {
+    text-decoration: none;
+} */
+
+.linkDownload:hover {
+    color: #BFD6C6;
+}

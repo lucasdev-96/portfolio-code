@@ -28,9 +28,9 @@ function NavBarComponent() {
             <Nav.Link href="#home">{t('navBar.home').toUpperCase()}</Nav.Link>
             <Nav.Link href="#link">{t('navBar.curriculum').toUpperCase()}</Nav.Link>
             <NavDropdown title={t('navBar.courses').toUpperCase()} id="basic-nav-dropdown">
-              <NavDropdown.Item href="#cursos/1.1">
+              {/* <NavDropdown.Item href="#cursos/1.1">
                 {t('navBar.courses.projects').toUpperCase()}
-              </NavDropdown.Item>
+              </NavDropdown.Item> */}
               <NavDropdown.Item href="#cursos/1.2">
                 {t('navBar.courses.certificates').toUpperCase()}
               </NavDropdown.Item>
@@ -39,11 +39,11 @@ function NavBarComponent() {
               <NavDropdown.Item key={'technique'} href="#habilidades/1.1">
                 {t('navBar.skills.techniques').toUpperCase()}
               </NavDropdown.Item>
-              <NavDropdown.Item key={'person'} href="#habilidades/1.2">
+              {/* <NavDropdown.Item key={'person'} href="#habilidades/1.2">
                 {t('navBar.skills.personal').toUpperCase()}
-              </NavDropdown.Item>
+              </NavDropdown.Item> */}
             </NavDropdown>
-            <div style={{ display: 'flex', width: '200px', justifyContent: 'end' }}>
+            <div className="fatherIcons">
               {languages.map((language, index) => {
                 const marginLeftIcon = index === 1 ? '10px' : '';
                 const opacity = i18n.resolvedLanguage === language.name ? '0.4' : '';

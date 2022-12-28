@@ -6,12 +6,17 @@ import CarrouselComponent from './components/carrousel/Carrousel';
 import Footer from './components/Footer/Footer';
 import './service/translate/i18next';
 
+const isCertificate = {
+  value: (value: boolean) => value
+};
+
 function App() {
   return (
     <>
       <NavBarComponent></NavBarComponent>
       <HomeComponent></HomeComponent>
-      <CarrouselComponent></CarrouselComponent>
+      <CarrouselComponent value={isCertificate.value(false)}></CarrouselComponent>
+      <CarrouselComponent value={isCertificate.value(true)}></CarrouselComponent>
       <Footer></Footer>
     </>
   );

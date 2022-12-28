@@ -5,6 +5,7 @@ import whatssap from '../../assets/img/skills/frame.png';
 import { Box, Container, Row, Column, FooterLink, Heading } from './FooterStyle';
 import './Footer.css';
 import { useTranslation } from 'react-i18next';
+import { SiWhatsapp } from 'react-icons/si';
 
 const Footer = () => {
   const { t } = useTranslation();
@@ -20,6 +21,12 @@ const Footer = () => {
           </Column>
           <Column>
             <Heading>{t('footer.contact')}</Heading>
+            <FooterLink href="https://wa.me/5519971341427" target="_blank">
+              <div className="linkFooter">
+                <SiWhatsapp />
+                <div>Whatssap</div>
+              </div>
+            </FooterLink>
             <img style={{ width: '150px' }} src={whatssap} alt="whatssap" />
           </Column>
           <Column>

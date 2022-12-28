@@ -29,7 +29,9 @@ i18next
           'footer.curriculum': 'Curriculum',
           'footer.contact': 'Contact me',
           'footer.socialMedia': 'Social Media',
-          'footer.technologies': 'Technologies Used'
+          'footer.technologies': 'Technologies Used',
+          'carrousel.name.certificates': 'Certificates',
+          'carrousel.info.certificates': ' Trybe Certificate of'
         }
       },
       pt: {
@@ -55,7 +57,9 @@ i18next
           'footer.curriculum': 'Currículo',
           'footer.contact': 'Contate me',
           'footer.socialMedia': 'Rede Sociais',
-          'footer.technologies': 'Tecnologias usadas'
+          'footer.technologies': 'Tecnologias usadas',
+          'carrousel.name.certificates': 'Certificados',
+          'carrousel.info.certificates': 'Certificado Trybe de'
         }
       }
     },
