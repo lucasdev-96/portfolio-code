@@ -54,7 +54,7 @@ function NavBarComponent() {
                 return (
                   <>
                     <button
-                      key={index}
+                      key={language.name}
                       style={{
                         border: 'none',
                         background: 'none',

@@ -13,7 +13,6 @@ import { ResumeContext } from '../../Context/ResumeContext';
 
 const Footer = () => {
   const { language } = useContext(ResumeContext);
-  console.log(language);
   const { t } = useTranslation();
   return (
     <Box>
@@ -21,7 +20,11 @@ const Footer = () => {
         <Row>
           <Column>
             <Heading>{t('footer.curriculum')}</Heading>
-            <a className="linkCurriculum" href={language === 'pt' ? resumePT : resumeEN} download>
+            <a
+              id="link"
+              className="linkCurriculum"
+              href={language === 'pt' ? resumePT : resumeEN}
+              download>
               Download
             </a>
           </Column>
@@ -30,7 +33,7 @@ const Footer = () => {
             <FooterLink href="https://wa.me/5519971341427" target="_blank">
               <div className="linkFooter">
                 <SiWhatsapp />
-                <div>Whatssap</div>
+                <div>Whatsapp</div>
               </div>
             </FooterLink>
             <img style={{ width: '150px' }} src={whatssap} alt="whatssap" />
