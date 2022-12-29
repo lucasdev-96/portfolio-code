@@ -237,19 +237,19 @@ function transformImgsToArray(): Array<data> {
     },
     {
       id: 33,
-      name: 'SocketIo',
+      name: 'SocketIO',
       src: socket,
       skill: 2
     },
     {
       id: 34,
-      name: 'EslLint',
+      name: 'ESLint',
       src: eslLint,
       skill: 5
     },
     {
       id: 35,
-      name: 'Bootstrap',
+      name: 'BootStrap',
       src: boostrap,
       skill: 5
     }

@@ -6,8 +6,14 @@ import { Box, Container, Row, Column, FooterLink, Heading } from './FooterStyle'
 import './Footer.css';
 import { useTranslation } from 'react-i18next';
 import { SiWhatsapp } from 'react-icons/si';
+import resumeEN from '../../assets/img/skills/resumeEN.pdf';
+import resumePT from '../../assets/img/skills/curriculoPt.pdf';
+import { useContext } from 'react';
+import { ResumeContext } from '../../Context/ResumeContext';
 
 const Footer = () => {
+  const { language } = useContext(ResumeContext);
+  console.log(language);
   const { t } = useTranslation();
   return (
     <Box>
@@ -15,9 +21,9 @@ const Footer = () => {
         <Row>
           <Column>
             <Heading>{t('footer.curriculum')}</Heading>
-            <FooterLink href="#">Aim</FooterLink>
-            <FooterLink href="#">Vision</FooterLink>
-            <FooterLink href="#">Testimonials</FooterLink>
+            <a className="linkCurriculum" href={language === 'pt' ? resumePT : resumeEN} download>
+              Download
+            </a>
           </Column>
           <Column>
             <Heading>{t('footer.contact')}</Heading>

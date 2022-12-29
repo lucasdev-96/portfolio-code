@@ -7,6 +7,8 @@ import './NavBar.css';
 import brazilIcon from '../../assets/img/logo-Brasil.png';
 import euaIcon from '../../assets/img/us.png';
 import { useTranslation } from 'react-i18next';
+import { useContext } from 'react';
+import { ResumeContext } from '../../Context/ResumeContext';
 
 function NavBarComponent() {
   const { i18n, t } = useTranslation();
@@ -14,6 +16,8 @@ function NavBarComponent() {
     { src: brazilIcon, name: 'pt' },
     { src: euaIcon, name: 'en' }
   ];
+  const { setLanguage } = useContext(ResumeContext);
+
   return (
     <Navbar sticky="top" className="navColor" expand="lg" variant="light">
       <Container>
@@ -57,7 +61,10 @@ function NavBarComponent() {
                         width: '50px',
                         marginLeft: marginLeftIcon
                       }}
-                      onClick={() => i18n.changeLanguage(language.name)}
+                      onClick={() => {
+                        i18n.changeLanguage(language.name);
+                        setLanguage(language.name);
+                      }}
                       disabled={i18n.resolvedLanguage === language.name}
                       type="submit">
                       <img style={{ width: '50px', opacity: opacity }} src={language.src} />
