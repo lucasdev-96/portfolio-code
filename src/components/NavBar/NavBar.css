@@ -1,0 +1,14 @@
+.fatherNames {
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+}
+
+@media (min-width: 1001px)
+{
+  .fatherIcons {
+    display: flex;
+    width: 200px;
+    justify-content: end;
+  }
+}

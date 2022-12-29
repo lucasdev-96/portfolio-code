@@ -1,0 +1,30 @@
+.CardFather {
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    background-color: white;
+    /* margin-left: 30px; */
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 20px;
+    border-radius: 50px;
+    box-shadow: -1px 15px 35px -3px rgba(0,0,0,0.39);
+    scroll-snap-align: start;
+    width: 60%;
+    margin-bottom: 50px;
+    margin-inline: auto;
+}
+
+.imgs {
+    width: 200px;
+    height: 200px;
+}
+
+/* .linkDownload {
+    text-decoration: none;
+} */
+
+.linkDownload:hover {
+    color: #BFD6C6;
+}

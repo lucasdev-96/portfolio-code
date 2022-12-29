@@ -1,0 +1,26 @@
+.linkFooter {
+    display: flex;
+    align-items: center;
+}
+
+.linkFooter div {
+    margin-left: 10px;
+}
+
+.whatssap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.linkCurriculum {
+  color: rgba(0, 0, 0, 0.55);
+  margin-bottom: 20px;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.linkCurriculum:hover {
+    color: green;
+    transition: 200ms ease-in;
+  }
